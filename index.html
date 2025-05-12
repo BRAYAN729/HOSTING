@@ -3,25 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practica</title>
+    <title>Celulares para Todos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .product h3 {
+            margin: 15px 0 5px;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1><font size=20 color=red face=arial> practica html</h1>
-        <hr>
-        <h2> <font size=25 color=green face=arial>lunes</h2>
-        <br>
-        <h3>martes</h3>
-        <br>
-        <h4>miercoles</h4>
-        <br>
-        <h5>jueves</h5>
-        <br>
-        <h6>viernes</h6>
-        <br>
-        <hr>
-        <img src="imagenes/red social.png"width="50%">
-        <hr>
-        <footer>&copy; BRAIAN CASTAÑO DIAZ 2025</footer>
+
+<header>
+    <h1>Celulares Para Todos</h1>
+    <p>Calidad, variedad y precio justo</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+    <h1>Descubre tu próximo celular</h1>
+    <p>Para jóvenes, adultos, empresas y más</p>
+</section>
+
+<section class="content" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1589394811895-ec7d1fdc3c1e" alt="Celular moderno">
+            <h3>Smartphone Pro</h3>
+            <p>Alta gama, gran rendimiento. Ideal para profesionales.</p>
+            <p><strong>$599</strong></p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b8938674c29" alt="Celular económico">
+            <h3>Celular Económico</h3>
+            <p>Perfecto para quienes necesitan lo esencial a buen precio.</p>
+            <p><strong>$199</strong></p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Celular para niños">
+            <h3>Celular Infantil</h3>
+            <p>Diseñado para niños, con control parental.</p>
+            <p><strong>$149</strong></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+</section>
+
+<section class="content" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes preguntas? Escríbenos a <strong>contacto@celularestodos.com</strong> o llama al <strong>+123 456 789</strong></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Celulares Para Todos. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
-
